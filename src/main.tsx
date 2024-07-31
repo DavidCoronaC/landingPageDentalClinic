@@ -1,8 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-const app = document.getElementById('app');
+import Router from './Routes/Router';
 
-const root = createRoot(app!);
+const app = document.getElementById('app') as HTMLElement;
 
-root.render(<div>Hola mundo</div>);
+const root = createRoot(app);
+
+root.render(<Router />);
